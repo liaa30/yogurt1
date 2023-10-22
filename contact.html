@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+     background-image:url(wallpaper\ kucing6.jpg);
+     background-size:cover;
+     background-repeat : no-repeat; 
+     background-position: center;
+     background-attachment: fixed;
+     height: 100%;
+}
+</style>
+<table align= "center" border="1" style="width: 1000px;">
+    <tr align="center">
+        <td><a href="home.html"  style="color: #e22bae;"> Home </a></td>
+        <td><a href="gallery.html"  style="color: #e22bae;"> Gallery </a></td>
+        <td><a href="aboutme.html"  style="color: #e22bae;"> Aboutme </a></td>
+        <td><a href="contact.html"  style="color: #e22bae;"> Contact </a></td>
+        <td><a href="Myclass.html"  style="color: #e22bae;"> Myclass </a></td>     
+    </tr>
+</table>
+    <table align="center">
+        <div class="container">
+        <tr>
+        <p>&ensp;</p>
+        <td style="color: #e22bae;">Nama</td>
+        <td style="color: #e22bae;">:</td>
+        <td style="color:rgb(12, 12, 12);"><input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+        <td style="color: #e22bae;">Email</td>
+        <td style="color: #e22bae;">:</td>
+        <td style="color:rgb(12, 12, 12);"><input type="email" name="Email" id="Email"></td>
+        </tr>
+        <tr>
+        <td style="color: #e22bae;">Deskripsi</td>
+        <td style="color: #e22bae;">:</td>
+        <td style="color: #e22bae;"><textarea name="Deskripsi" id="Deskripsi" cols="30" rows="10"></textarea></td>
+        </tr>
+    </table>
+
+    <table align="center">
+        <tr>
+        <td><button onclick="send()" style="background-color: white; color: #e22bae; width: 165px;">Send</button> </td> 
+        </tr> 
+
+    <script>
+        function send() {
+        var Nama = document.getElementById('nama').value 
+        var Email = document.getElementById('Email').value 
+        var Deskripsi = document.getElementById('Deskripsi').value 
+
+        alert("Nama : " + Nama + "\n Email :" + Email + "\n Deskripsi :" + Deskripsi )
+        }
+    </script>
+    </table>    
+</html>
